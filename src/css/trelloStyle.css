@@ -1,0 +1,284 @@
+.trello-box {
+  max-width: 1300px;
+  min-width: 1000px;
+  width: 97%;
+  height: 820px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: blue;
+  padding: 5px;
+  border: 5px solid white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+  cursor: default;
+}
+
+.list-box {
+  max-width: 450px;
+  min-width: 300px;
+  padding: 5px;
+  width: 30%;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: lightblue;
+  position: relative;
+}
+
+.list-box-adding-container {
+  display: inline;
+  cursor: pointer;
+  color: gray;
+}
+
+.list-box-adding-container:hover {
+  color: blue;
+}
+
+.list-box-heading {
+  margin-left: 20px;
+}
+
+.list-box-list {
+  list-style-type: none;
+  max-height: 725px;
+  overflow: auto;
+}
+
+.list-box-adding-sign {
+  line-height: 30px;
+  font-size: 30px;
+  vertical-align: bottom;
+}
+
+.list-box-adding-text {
+  line-height: 30px;
+  padding-left: 5px;
+}
+
+.empty-item {
+  color: gray;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.add-form-container-absolute {
+  width: 100%;
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-input-container {
+  position: relative;
+}
+
+.form-input {
+  padding: 5px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.add-form-input {
+  background-color: lightgrey;
+  border: 2px solid lightgrey;
+  border-radius: 10px 10px 0 0;
+}
+
+.add-form-text {
+  background-color: white;
+  border: 2px solid white;
+  resize: none;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+
+.form-input:focus {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.form-input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.add-form-button {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding: 3px;
+  border: 3px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-form-button-add {
+  background-color: lightgreen;
+}
+
+.add-form-button-cancel {
+  background-color: lightskyblue;
+  margin-left: 20px;
+}
+
+.add-form-button-add:hover {
+  color: white;
+  background-color: green;
+  border-color: white;
+}
+
+.add-form-button-cancel:hover {
+  color: white;
+  background-color: blue;
+  border-color: white;
+}
+
+.error-span {
+  width: 80%;
+  font-size: 16px;
+  padding: 3px;
+  color: red;
+  background-color: white;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 2;
+  left: 10%;
+}
+
+.input-error {
+  top: 110%;
+}
+
+.text-error {
+  top: 80%;
+}
+
+.error-span::before {
+  content: "";
+  top: -20px;
+  left: calc(50% - 10px);
+  border: 10px solid transparent;
+  border-bottom: 10px solid red;
+  position: absolute;
+}
+
+.error-span::after {
+  content: "";
+  top: -18px;
+  left: calc(50% - 10px);
+  border: 10px solid transparent;
+  border-bottom: 10px solid white;
+  position: absolute;
+}
+
+.data-item {
+  color: black;
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: grab;
+  margin-bottom: 10px;
+  border: 2px solid lightgray;
+}
+
+.data-item:hover {
+  border: 2px solid black;
+}
+
+.card-info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-content {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.card-number {
+  color: white;
+  background-color: blue;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.card-date {
+  font-size: 15px;
+  margin: 0 20px;
+}
+
+.card-close {
+  color: white;
+  background-color: green;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.card-close:hover {
+  background-color: red;
+}
+
+.card-heading {
+  padding: 2px 4px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-description {
+  min-height: 70px;
+  font-weight: normal;
+  background-color: white;
+  padding: 2px 4px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-radius: 0 0 10px 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.noValid {
+  color: red;
+  border-color: red;
+  border-radius: 10px;
+}
+
+.dragged {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.ghost {
+  list-style-type: none;
+  position: absolute;
+  z-index: 999;
+  transform: rotate(20deg);
+  transform-origin: 50% 50%;
+  opacity: 0.5;
+  pointer-events: none;
+}
